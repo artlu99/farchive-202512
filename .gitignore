@@ -1,0 +1,17 @@
+# build output
+dist/
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+bun.lock
+
+# development
+.vscode/
+.wrangler/
+*.tsbuildinfo
+
+# personalized data
+/src/content/obsidian/
+/src/content/docs/obsidian/
