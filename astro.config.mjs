@@ -14,8 +14,11 @@ export default defineConfig({
 	site: "https://20251201-artlu.farchiver.xyz",
 	vite: {
 		define: {
-			// Polyfill for Node.js 'process' global used by micromatch/picomatch
-			'process.env': '{}',
+			// Polyfill for Node.js 'process' global used by micromatch/picomatch and starlight-site-graph
+			'process': JSON.stringify({
+				env: {},
+				versions: {},
+			}),
 			'globalThis.process': JSON.stringify({
 				env: {},
 				versions: {},
